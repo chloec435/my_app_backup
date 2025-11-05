@@ -1,0 +1,54 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "flutter",
+            "cwd": "Users/cc/flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "my_app",
+            "cwd": "Users/cc/Projects/my_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "my_app (profile mode)",
+            "cwd": "Users/cc/Projects/my_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "my_app (release mode)",
+            "cwd": "Users/cc/Projects/my_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "trying_flutter",
+            "cwd": "Users/cc/Projects/trying_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "trying_flutter (profile mode)",
+            "cwd": "Users/cc/Projects/trying_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "trying_flutter (release mode)",
+            "cwd": "Users/cc/Projects/trying_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

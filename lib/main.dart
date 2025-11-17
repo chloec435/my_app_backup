@@ -27,46 +27,66 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // AppBar with custom font
-      appBar: AppBar(
-        title: Text(
-          widget.title,
-          style: const TextStyle(
-            fontFamily: 'Manera', // Built-in font
-            fontSize: 60,
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
-          ),
-        ),
-        backgroundColor: const Color.fromARGB(255, 255, 153, 0),
-      ),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Text>[
-            const Text('Welcome to FindIT RIT!'),
+          children: [
+            Image.asset('images/home_logo.png', width: 300.0, height: 300.0),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              "FindIt RIT",
+              style: TextStyle(
+                fontFamily: 'Manara',
+                fontSize: 60,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+            SizedBox(width: 8.0, height: 8.0),
+            Text(
+              "Find Your Way, The Tiger Way",
+              style: TextStyle (
+                fontFamily: 'Manara',
+                fontSize: 20,
+                fontStyle: FontStyle.italic,
+                color: Colors.black,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                print('Welcone to FindIt RIT');
+              },
+              child: const Text('Welcome to FindIt RIT'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(2, 208, 211, 212),
+                foregroundColor: Colors.black,
+                textStyle: const TextStyle(
+                  fontFamily: 'Manera',
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            SizedBox (width: 16, height: 16),
+            ElevatedButton(
+              onPressed: () {
+                print('Learn more');
+              },
+              child: const Text('Learn More'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(2, 208, 211, 212),
+                foregroundColor: Colors.black,
+                textStyle: const TextStyle(
+                  fontFamily: 'Manera',
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }

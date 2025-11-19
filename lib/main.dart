@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/building.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,7 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(width: 16.0, height: 16.0),
             ElevatedButton(
               onPressed: () {
-                print('WElcone to FindIt RIT');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SecondPage(title: 'Second Page'),
+                  ),
+                );
               },
               child: const Text('Welcome to FindIt RIT'),
               style: ElevatedButton.styleFrom(
@@ -73,9 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(width: 16.0, height: 16.0),
             ElevatedButton(
-              onPressed: () {
-                print('WElcone to FindIt RIT');
-              },
+              onPressed: () {},
               child: const Text('Learn More..'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(2, 208, 211, 212),

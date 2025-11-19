@@ -19,6 +19,7 @@
             "request": "launch",
             "type": "dart"
         },
+
         {
             "name": "my_app (profile mode)",
             "cwd": "Users/cc/Projects/my_app",

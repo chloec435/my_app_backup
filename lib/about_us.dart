@@ -78,14 +78,31 @@ class _MyHomePageState extends State<AboutUs> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Row{
-                mainAxisAlignment: MainAxisAlignment.center,
-                children<Widget>[
-                  Image.asset('images/chloe.png', width: 100.0, height: 100.0),
-                  SizedBox(width: 16.0, height: 16.0),
-                  Image.asset('images/suhani.png', width: 100.0, height: 100.0),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Image.asset(
+                      'images/chloe.png',
+                      width: 100.0,
+                      height: 100.0,
+                    ),
+                  ),
+                  Expanded(
+                    child: Image.asset(
+                      'images/suhani.png',
+                      width: 100.0,
+                      height: 100.0,
+                    ),
+                  ),
+                  Expanded(
+                    child: Image.asset('images/sahasra.png', width: 100.0),
+                  ),
+                  Expanded(child: Image.asset('images/dana.png', width: 100.0)),
+                  Expanded(
+                    child: Image.asset('images/varshi.png', width: 100.0),
+                  ),
                 ],
-              }
+              ),
               SizedBox(width: 150, height: 150),
               Row(
                 mainAxisAlignment: MainAxisAlignment
@@ -157,7 +174,6 @@ class _MyHomePageState extends State<AboutUs> {
                   ),
                 ],
               ),
-              
             ],
           ),
         ),

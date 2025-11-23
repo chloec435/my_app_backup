@@ -35,7 +35,7 @@ class _MyHomePageState extends State<AboutUs> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       // AppBar with custom fon,
-      body: Center(
+      body: SingleChildScrollView(
         child: Container(
           constraints: const BoxConstraints(maxWidth: 600),
           padding: const EdgeInsets.all(16.0),
@@ -78,28 +78,33 @@ class _MyHomePageState extends State<AboutUs> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              SizedBox(width: 50.0, height: 50.0),
               Row(
                 children: <Widget>[
-                  Expanded(
-                    child: Image.asset(
-                      'images/chloe.png',
-                      width: 100.0,
-                      height: 100.0,
-                    ),
+                  CircleAvatar(
+                    radius: 75,
+                    backgroundImage: AssetImage('images/suhani.png'),
                   ),
-                  Expanded(
-                    child: Image.asset(
-                      'images/suhani.png',
-                      width: 100.0,
-                      height: 100.0,
-                    ),
+                  CircleAvatar(
+                    radius: 75,
+                    backgroundImage: AssetImage('images/chloe.png'),
                   ),
-                  Expanded(
-                    child: Image.asset('images/sahasra.png', width: 100.0),
+                  CircleAvatar(
+                    radius: 75,
+                    backgroundImage: AssetImage('images/sahasra.png'),
                   ),
-                  Expanded(child: Image.asset('images/dana.png', width: 100.0)),
-                  Expanded(
-                    child: Image.asset('images/varshi.png', width: 100.0),
+                ],
+              ),
+              SizedBox(width: 20.0, height: 20.0),
+              Row(
+                children: <Widget>[
+                  CircleAvatar(
+                    radius: 75,
+                    backgroundImage: AssetImage('images/dana.png'),
+                  ),
+                  CircleAvatar(
+                    radius: 75,
+                    backgroundImage: AssetImage('images/varshi.png'),
                   ),
                 ],
               ),
@@ -118,7 +123,6 @@ class _MyHomePageState extends State<AboutUs> {
                         ),
                       );
                     },
-
                     child: const Text('←'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color.fromARGB(2, 208, 211, 212),

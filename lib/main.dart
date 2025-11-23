@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/about_us.dart';
 import 'package:my_app/building.dart';
+import 'package:my_app/learn_more.dart';
 
 void main() {
   runApp(const MyApp());
@@ -79,7 +81,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(width: 16.0, height: 16.0),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AboutUs(title: 'Learn More'),
+                  ),
+                );
+              },
               child: const Text('Learn More..'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(2, 208, 211, 212),
